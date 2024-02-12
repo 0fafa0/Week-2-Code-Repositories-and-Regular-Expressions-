@@ -24,3 +24,24 @@ grep_at <- grep(pattern = '^at$', x = sentence)
 
 grep_at
 
+#2.2
+# search for capital letters
+grep_uc <- grep(pattern = '[A-Z]', x = sentence)
+grep_uc
+sentence[grep_uc]
+
+# search for lowercase letters
+grep_lc <- grep(pattern = '[a-z]', x = sentence)
+grep_lc
+sentence[grep_lc]
+
+# search for words with characters between 'a' and 'e'
+grep_ae <- grep(pattern = 'a.e', x = sentence)
+grep_ae
+sentence[grep_ae]
+
+# search for words with characters between 'b' and 'c'
+grep_bc <- grep(pattern = 'b.c', x = sentence)
+grep_bc
+sentence[grep_bc]
+
