@@ -45,3 +45,12 @@ grep_bc <- grep(pattern = 'b.c', x = sentence)
 grep_bc
 sentence[grep_bc]
 
+#2.3
+sentence[grep(pattern = 'e.?e', x = sentence)]
+# words with two es together or one character between the es
+
+sentence[grep(pattern = 'e.*e', x = sentence)]
+# words with two es together or any any number of character between two es
+
+sentence[grep(pattern = 'e.+e', x = sentence)]
+# words with one or more characters between two es, excludes two es together
