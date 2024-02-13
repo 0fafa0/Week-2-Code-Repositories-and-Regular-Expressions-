@@ -54,3 +54,12 @@ sentence[grep(pattern = 'e.*e', x = sentence)]
 
 sentence[grep(pattern = 'e.+e', x = sentence)]
 # words with one or more characters between two es, excludes two es together
+
+#2.4
+gsub_out <- gsub(pattern = 'a.e', x = sentence, replacement = '!!!')
+gsub_out
+# substitutes a_e with !!! 
+
+# substitute t with ?
+gsub_t <- gsub(pattern = 't', x = sentence, replacement = '?')
+gsub_t
